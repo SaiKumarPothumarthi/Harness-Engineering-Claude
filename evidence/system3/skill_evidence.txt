@@ -1,0 +1,7 @@
+.claude/commands/review.md:4:allowed-tools:
+.claude/commands/review.md:131:- If a finding requires running code or modifying files to verify, ask the author to run a specific check rather than attempting it from the review session. This command's `allowed-tools` are read-only by design.
+.claude/skills/deploy-check/SKILL.md:4:context: fork
+.claude/skills/deploy-check/SKILL.md:6:allowed-tools:
+.claude/skills/deploy-check/SKILL.md:29:## Why `context: fork`
+.claude/skills/deploy-check/SKILL.md:33:`context: fork` is a Claude Code product feature operating at the skill-invocation layer. Conceptually it is analogous to the **Branching Reality** pattern — establish a foundational analysis, then branch into isolated explorations whose outputs do not contaminate the parent. Session-level forking (`fork_session`) applies that pattern to a whole session; `context: fork` is the skill-spec equivalent.
+.claude/skills/deploy-check/SKILL.md:83:- It never pushes, deploys, or runs migrations. The `allowed-tools` allowlist is read-only by construction; even if a future maintainer adds `Write` here, the team's `/review` command should catch the change.

@@ -1,0 +1,11 @@
+.env
+.env.*
+*.key
+*.pen
+*.pem
+_pycache_/
+.pytest_cache/
+.venv/
+venv
+venv/
+data/*.sqlite
